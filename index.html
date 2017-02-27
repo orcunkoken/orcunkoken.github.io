@@ -22,7 +22,8 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet">
 
 		<link href="./orcun_cv_files/swipebox/css/swipebox.min.css" rel="stylesheet">
-		
+		<link rel="stylesheet" href="./orcun_cv_files/photoswipe/photoswipe.css">
+		<link rel="stylesheet" href="./orcun_cv_files/photoswipe/default-skin/default-skin.css">
 		
 		
 		<link rel="shortcut icon" href="./orcun_cv_files/headphones.ico" type="image/x-icon">
@@ -402,23 +403,22 @@
 <hr>
 
 
-<div class="row">
-
- 
+<div class="row"> 
  	<div class="col-md-6 col-sm-12 col-xs-12">
 		<figure class="effect">
 			<img src="./orcun_cv_files/projects/01-uzelli/uzelli-thumbnail.jpg" alt="Uzelli">
 			
 			<figcaption>
-				<h3>Uzelli Çayyolu</h3>
-				<p class="first-figure-effect"><strong>Type:</strong>Mixed Use</p>
-				<p><strong>Size:</strong>206.150 m2</p>
-				<p><strong>Location:</strong>Ankara/TURKEY</p>
-				<!--<a href="./orcun_cv_files/projects/01-uzelli/uzelli-01.jpg" data-lightbox="uzelli" data-title="1"></a>-->
-				<a href="#" id="uzelli">-</a>
-				<span class="icon">
-					<span class="glyphicon glyphicon-new-window"></span>
-				</span>
+				<div id="gallery">
+					<h3>Uzelli Çayyolu</h3>
+					<p class="first-figure-effect"><strong>Type:</strong>Mixed Use</p>
+					<p><strong>Size:</strong>206.150 m2</p>
+					<p><strong>Location:</strong>Ankara/TURKEY</p>
+					<a href="#" onclick="$('#uzelli-init').click ();"></a>
+					<span class="icon">
+						<span class="glyphicon glyphicon-new-window"></span>
+					</span>
+				</div>
 			</figcaption> 
 		</figure>
 	</div>
@@ -548,21 +548,21 @@
 	</div>
 	
 	
-	<div style="display:none">
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg" data-lightbox="uzelli" data-title="City View"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg" data-lightbox="uzelli" data-title="Project Details"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg" data-lightbox="uzelli" data-title="2"></a>
-		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg" data-lightbox="uzelli" data-title="2"></a>				
+	<div style="display:none" id="uzelli">
+		<img id="uzelli-init" src="./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg" data-lightbox="uzelli" data-title="City View"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg"/>
+		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg"/>				
 	</div>
 
 
@@ -713,32 +713,39 @@
 
 		<script type="text/javascript" src="./orcun_cv_files/swipebox/js/jquery.swipebox.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+		<script src="./orcun_cv_files/photoswipe/jquery.photoswipe-global.js"></script>
 		
 		<script type="text/javascript">
 			$( document ).ready(function() {
 
-					$( '#uzelli' ).click( function( e ) {
-						e.preventDefault();
-						$.swipebox( [
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-01.jpg', title:'My Caption' },
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg', title:'My Caption' },
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg', title:'My Caption' }, 
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg', title:'My Caption' }, 
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg', title:'My Caption' }, 
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg', title:'My Caption' }, 
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg', title:'My Caption' },  
-							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg', title:'My Second Caption' }
-						] );
-					} );
+					// $( '#uzelli' ).click( function( e ) {
+					// 	e.preventDefault();
+					// 	$.swipebox( [
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-01.jpg', title:'My Caption' },
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg', title:'My Caption' },
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg', title:'My Caption' }, 
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg', title:'My Caption' }, 
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg', title:'My Caption' }, 
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg', title:'My Caption' }, 
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg', title:'My Caption' },  
+					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg', title:'My Second Caption' }
+					// 	] );
+					// } );
+
+					$('#uzelli').photoSwipe();
 
 			});
+
+			
+			
 			</script>
 
 		<script>
