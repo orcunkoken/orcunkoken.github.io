@@ -22,8 +22,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet">
 
 		<link href="./orcun_cv_files/swipebox/css/swipebox.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="./orcun_cv_files/photoswipe/photoswipe.css">
-		<link rel="stylesheet" href="./orcun_cv_files/photoswipe/default-skin/default-skin.css">
+		
 		
 		
 		<link rel="shortcut icon" href="./orcun_cv_files/headphones.ico" type="image/x-icon">
@@ -403,22 +402,23 @@
 <hr>
 
 
-<div class="row"> 
+<div class="row">
+
+ 
  	<div class="col-md-6 col-sm-12 col-xs-12">
 		<figure class="effect">
 			<img src="./orcun_cv_files/projects/01-uzelli/uzelli-thumbnail.jpg" alt="Uzelli">
 			
 			<figcaption>
-				<div id="gallery">
-					<h3>Uzelli Çayyolu</h3>
-					<p class="first-figure-effect"><strong>Type:</strong>Mixed Use</p>
-					<p><strong>Size:</strong>206.150 m2</p>
-					<p><strong>Location:</strong>Ankara/TURKEY</p>
-					<a id="uzelli-a" href="#"></a>
-					<span class="icon">
-						<span class="glyphicon glyphicon-new-window"></span>
-					</span>
-				</div>
+				<h3>Uzelli Çayyolu</h3>
+				<p class="first-figure-effect"><strong>Type:</strong>Mixed Use</p>
+				<p><strong>Size:</strong>206.150 m2</p>
+				<p><strong>Location:</strong>Ankara/TURKEY</p>
+				<!--<a href="./orcun_cv_files/projects/01-uzelli/uzelli-01.jpg" data-lightbox="uzelli" data-title="1"></a>-->
+				<a href="#" id="uzelli">-</a>
+				<span class="icon">
+					<span class="glyphicon glyphicon-new-window"></span>
+				</span>
 			</figcaption> 
 		</figure>
 	</div>
@@ -434,7 +434,7 @@
 				<p><strong>Size:</strong>115.000 m2</p>
 				<p><strong>Location:</strong>Ankara/TURKEY</p>
 				<!--<a href="./orcun_cv_files/projects/02-togo/togo-01.jpg" data-lightbox="togo" data-title="Togo Details">-</a>-->
-				<a id="togo-a" href="#"></a>
+				<a href="#" id="togo">-</a>
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
@@ -453,7 +453,7 @@
 				<p><strong>Size:</strong>15.000 m2</p>
 				<p><strong>Location:</strong>Ankara/TURKEY</p>
 				<!--<a href="./orcun_cv_files/projects/03-sendika/sendika-01.jpg" data-lightbox="sendika" data-title="sendika Details">-</a>-->
-				<a id="sendika-a" href="#"></a>
+				<a href="#" id="sendika">-</a>
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
@@ -472,7 +472,7 @@
 				<p><strong>Size:</strong>28.350 m2</p>
 				<p><strong>Location:</strong>Ankara/TURKEY</p>
 				<!--<a href="./orcun_cv_files/projects/04-twin/twin-01.jpg" data-lightbox="twin" data-title="twin Details">-</a>-->
-				<a id="twin-a" href="#"></a>
+				<a href="#" id="twin">-</a>
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
@@ -491,7 +491,7 @@
 				<p><strong>Size:</strong>3.800 m2</p>
 				<p><strong>Location:</strong>Ankara/TURKEY</p>
 				<!--<a href="./orcun_cv_files/projects/05-fema/fema-01.jpg" data-lightbox="fema" data-title="fema Details">-</a>-->
-				<a id="fema-a" href="#"></a>
+				<a href="#" id="fema">-</a>
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
@@ -510,7 +510,7 @@
 				<p><strong>Size:</strong>22.700 m2</p>
 				<p><strong>Location:</strong>İstanbul/TURKEY</p>
 				<!--<a href="./orcun_cv_files/projects/06-caferaga/caferaga-01.jpg" data-lightbox="caferaga" data-title="caferaga Details">-</a>-->
-				<a id="caferaga-a" href="#"></a>
+				<a href="#" id="caferaga">-</a>
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
@@ -528,7 +528,7 @@
 				<p><strong>Size:</strong>11.000 m2</p>
 				<p><strong>Location:</strong>Uşak/TURKEY</p>
 				<!--<a href="./orcun_cv_files/projects/07-usak/usak-01.jpg" data-lightbox="usak" data-title="usak Details">-</a>-->
-				<a id="usak-a" href="#"></a>
+				<a href="#" id="usak">-</a>
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
@@ -545,8 +545,8 @@
 				<p class="first-figure-effect"><strong>Type:</strong>Museum</p>
 				<p><strong>Size:</strong>12.500 m2</p>
 				<p><strong>Location:</strong>Çanakkale/TURKEY</p>
-				<a href="./orcun_cv_files/projects/08-troy/troy-01.jpg" data-lightbox="troy" data-title="troy Details">-</a>
-				<a id="troy-a" href="#"></a>
+				<!--<a href="./orcun_cv_files/projects/08-troy/troy-01.jpg" data-lightbox="troy" data-title="troy Details">-</a>-->
+				<a href="#" id="troy">-</a>
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
@@ -555,118 +555,113 @@
 	</div>
 	
 	
-	<div style="display:none" id="uzelli">
-		<img id="uzelli-init" src="./orcun_cv_files/projects/01-uzelli/uzelli-01.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg"/>
-		<img src="./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg"/>				
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg" data-lightbox="uzelli" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg" data-lightbox="uzelli" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg" data-lightbox="uzelli" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg" data-lightbox="uzelli" data-title="2"></a>				
 	</div>
 
 
-	<div style="display:none" id="togo">
-		<img id="togo-init" src="./orcun_cv_files/projects/02-togo/togo-01.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-02.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-03.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-04.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-05.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-06.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-07.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-08.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-09.jpg"/>
-		<img src="./orcun_cv_files/projects/02-togo/togo-10.jpg"/>		
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/02-togo/togo-02.jpg" data-lightbox="togo" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-03.jpg" data-lightbox="togo" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-04.jpg" data-lightbox="togo" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-05.jpg" data-lightbox="togo" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-06.jpg" data-lightbox="togo" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-07.jpg" data-lightbox="togo" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-08.jpg" data-lightbox="togo" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-09.jpg" data-lightbox="togo" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/02-togo/togo-10.jpg" data-lightbox="togo" data-title="2"></a>		
 	</div>
 
 
-	<div style="display:none" id="sendika">
-		<img id="sendika-init" src="./orcun_cv_files/projects/03-sendika/sendika-01.jpg" data-lightbox="sendika" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-02.jpg" data-lightbox="sendika" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-03.jpg" data-lightbox="sendika" data-title="Project Details"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-04.jpg" data-lightbox="sendika" data-title="2"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-05.jpg" data-lightbox="sendika" data-title="2"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-06.jpg" data-lightbox="sendika" data-title="2"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-07.jpg" data-lightbox="sendika" data-title="2"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-08.jpg" data-lightbox="sendika" data-title="2"/>
-		<img src="./orcun_cv_files/projects/03-sendika/sendika-09.jpg" data-lightbox="sendika" data-title="2"/>
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-02.jpg" data-lightbox="sendika" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-03.jpg" data-lightbox="sendika" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-04.jpg" data-lightbox="sendika" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-05.jpg" data-lightbox="sendika" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-06.jpg" data-lightbox="sendika" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-07.jpg" data-lightbox="sendika" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-08.jpg" data-lightbox="sendika" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/03-sendika/sendika-09.jpg" data-lightbox="sendika" data-title="2"></a>
 	</div>
 
 
-	<div style="display:none" id="twin">
-		<img id="twin-init" src="./orcun_cv_files/projects/04-twin/twin-01.jpg" data-lightbox="twin" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/04-twin/twin-02.jpg" data-lightbox="twin" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/04-twin/twin-03.jpg" data-lightbox="twin" data-title="Project Details"/>
-		<img src="./orcun_cv_files/projects/04-twin/twin-04.jpg" data-lightbox="twin" data-title="2"/>
-		<img src="./orcun_cv_files/projects/04-twin/twin-05.jpg" data-lightbox="twin" data-title="2"/>
-		<img src="./orcun_cv_files/projects/04-twin/twin-06.jpg" data-lightbox="twin" data-title="2"/>
-		<img src="./orcun_cv_files/projects/04-twin/twin-07.jpg" data-lightbox="twin" data-title="2"/>
-		<img src="./orcun_cv_files/projects/04-twin/twin-08.jpg" data-lightbox="twin" data-title="2"/>
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/04-twin/twin-02.jpg" data-lightbox="twin" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/04-twin/twin-03.jpg" data-lightbox="twin" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/04-twin/twin-04.jpg" data-lightbox="twin" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/04-twin/twin-05.jpg" data-lightbox="twin" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/04-twin/twin-06.jpg" data-lightbox="twin" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/04-twin/twin-07.jpg" data-lightbox="twin" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/04-twin/twin-08.jpg" data-lightbox="twin" data-title="2"></a>
 	</div>
 
 
 
-	<div style="display:none" id="fema">
-		<img id="fema-init" src="./orcun_cv_files/projects/05-fema/fema-01.jpg" data-lightbox="fema" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/05-fema/fema-02.jpg" data-lightbox="fema" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/05-fema/fema-03.jpg" data-lightbox="fema" data-title="Project Details"/>
-		<img src="./orcun_cv_files/projects/05-fema/fema-04.jpg" data-lightbox="fema" data-title="2"/>
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/05-fema/fema-02.jpg" data-lightbox="fema" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/05-fema/fema-03.jpg" data-lightbox="fema" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/05-fema/fema-04.jpg" data-lightbox="fema" data-title="2"></a>
 	</div>
 
 
-	<div style="display:none" id="caferaga">
-		<img id="caferaga-init" src="./orcun_cv_files/projects/06-caferaga/caferaga-01.jpg" data-lightbox="caferaga" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-02.jpg" data-lightbox="caferaga" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-03.jpg" data-lightbox="caferaga" data-title="Project Details"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-04.jpg" data-lightbox="caferaga" data-title="2"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-05.jpg" data-lightbox="caferaga" data-title="2"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-06.jpg" data-lightbox="caferaga" data-title="2"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-07.jpg" data-lightbox="caferaga" data-title="2"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-08.jpg" data-lightbox="caferaga" data-title="2"/>
-		<img src="./orcun_cv_files/projects/06-caferaga/caferaga-09.jpg" data-lightbox="caferaga" data-title="2"/>
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-02.jpg" data-lightbox="caferaga" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-03.jpg" data-lightbox="caferaga" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-04.jpg" data-lightbox="caferaga" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-05.jpg" data-lightbox="caferaga" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-06.jpg" data-lightbox="caferaga" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-07.jpg" data-lightbox="caferaga" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-08.jpg" data-lightbox="caferaga" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/06-caferaga/caferaga-09.jpg" data-lightbox="caferaga" data-title="2"></a>
 	</div>
 
 
-	<div style="display:none" id="usak">
-		<img id="usak-init" src="./orcun_cv_files/projects/07-usak/usak-01.jpg" data-lightbox="usak" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-02.jpg" data-lightbox="usak" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-04.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-05.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-06.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-07.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-08.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-09.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-10.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-11.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-12.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-13.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-14.jpg" data-lightbox="usak" data-title="2"/>
-		<img src="./orcun_cv_files/projects/07-usak/usak-15.jpg" data-lightbox="usak" data-title="2"/>				
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/07-usak/usak-02.jpg" data-lightbox="usak" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-03.jpg" data-lightbox="usak" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-04.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-05.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-06.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-07.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-08.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-09.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-10.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-11.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-12.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-13.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-14.jpg" data-lightbox="usak" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/07-usak/usak-15.jpg" data-lightbox="usak" data-title="2"></a>				
 	</div>
 
 
-	<div style="display:none" id="troy">
-		<img id="troy-init" src="./orcun_cv_files/projects/08-troy/troy-01.jpg" data-lightbox="troy" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-02.jpg" data-lightbox="troy" data-title="City View"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-03.jpg" data-lightbox="troy" data-title="Project Details"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-04.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-05.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-06.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-07.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-08.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-09.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-10.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-11.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-12.jpg" data-lightbox="troy" data-title="2"/>
-		<img src="./orcun_cv_files/projects/08-troy/troy-13.jpg" data-lightbox="troy" data-title="2"/>
+	<div style="display:none">
+		<a href="./orcun_cv_files/projects/08-troy/troy-02.jpg" data-lightbox="troy" data-title="City View"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-03.jpg" data-lightbox="troy" data-title="Project Details"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-04.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-05.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-06.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-07.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-08.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-09.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-10.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-11.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-12.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-13.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-14.jpg" data-lightbox="troy" data-title="2"></a>
+		<a href="./orcun_cv_files/projects/08-troy/troy-15.jpg" data-lightbox="troy" data-title="2"></a>				
 	</div>
 		
 </div>
@@ -725,63 +720,133 @@
 
 		<script type="text/javascript" src="./orcun_cv_files/swipebox/js/jquery.swipebox.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-
-		<script src="./orcun_cv_files/photoswipe/jquery.photoswipe-global.js"></script>
 		
 		<script type="text/javascript">
-					// $( '#uzelli' ).click( function( e ) {
-					// 	e.preventDefault();
-					// 	$.swipebox( [
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-01.jpg', title:'My Caption' },
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg', title:'My Caption' },
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg', title:'My Caption' }, 
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg', title:'My Caption' }, 
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg', title:'My Caption' }, 
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg', title:'My Caption' }, 
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg', title:'My Caption' },  
-					// 		{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg', title:'My Second Caption' }
-					// 	] );
-					// } );
+			$( document ).ready(function() {
 
-					$('#uzelli').photoSwipe();
-					$("#uzelli-a").bind("click", function(){$('#uzelli-init').click();} );
-					$("#uzelli-a").bind("tap", function(){$('#uzelli-init').click();} );
-					// $("uzelli-a").bind("click", function(){$('#uzelli-init').click();} );
-					$('#togo').photoSwipe();
-					$("#togo-a").bind("click", function(){$('#togo-init').click();} );
-					$("#togo-a").bind("tap", function(){$('#togo-init').click();} );
+					$( '#uzelli' ).click( function( e ) {
+						e.preventDefault();
+						$.swipebox( [
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-01.jpg', title:'Uzelli Çayyolu' },
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-02.jpg', title:'Uzelli Çayyolu' },
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-03.jpg', title:'Uzelli Çayyolu' }, 
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-04.jpg', title:'Uzelli Çayyolu' }, 
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-05.jpg', title:'Uzelli Çayyolu' }, 
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-06.jpg', title:'Uzelli Çayyolu' }, 
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-07.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-08.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-09.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-10.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-11.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-12.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-13.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-14.jpg', title:'Uzelli Çayyolu' },  
+							{ href:'./orcun_cv_files/projects/01-uzelli/uzelli-15.jpg', title:'Uzelli Çayyolu' }
+						] );
+					} );
 
-					$('#sendika').photoSwipe();
-					$("#sendika-a").bind("click", function(){$('#sendika-init').click();} );
-					$("#sendika-a").bind("tap", function(){$('#sendika-init').click();} );
+					$( '#togo' ).click( function( e ) {
+						e.preventDefault();
+						$.swipebox( [
+								{ href:'./orcun_cv_files/projects/02-togo/togo-01.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-02.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-03.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-04.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-05.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-06.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-07.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-08.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-09.jpg', title:'Togo' },
+								{ href:'./orcun_cv_files/projects/02-togo/togo-10.jpg', title:'Togo' }	
+							]);
+					});
 
-					$('#twin').photoSwipe();
-					$("#twin-a").bind("click", function(){$('#twin-init').click();} );
-					$("#twin-a").bind("tap", function(){$('#twin-init').click();} );
 
-					$('#fema').photoSwipe();
-					$("#fema-a").bind("click", function(){$('#fema-init').click();} );
-					$("#fema-a").bind("tap", function(){$('#fema-init').click();} );
+					$( '#sendika' ).click( function( e ) { e.preventDefault(); $.swipebox( [
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-01.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-02.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-03.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-04.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-05.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-06.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-07.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-08.jpg', title:'Turkish Metal Union Headquarters' },
+		{ href:'./orcun_cv_files/projects/03-sendika/sendika-09.jpg', title:'Turkish Metal Union Headquarters' },
+		] ); } );
 
-					$('#caferaga').photoSwipe();
-					$("#caferaga-a").bind("click", function(){$('#caferaga-init').click();} );
-					$("#caferaga-a").bind("tap", function(){$('#caferaga-init').click();} );
 
-					$('#usak').photoSwipe();
-					$("#usak-a").bind("click", function(){$('#usak-init').click();} );
-					$("#usak-a").bind("tap", function(){$('#usak-init').click();} );
+	$( '#twin' ).click( function( e ) { e.preventDefault(); $.swipebox( [
+		{ href:'./orcun_cv_files/projects/04-twin/twin-01.jpg', title:'Gözüm Twin Towers' },
+		{ href:'./orcun_cv_files/projects/04-twin/twin-02.jpg', title:'Gözüm Twin Towers' },
+		{ href:'./orcun_cv_files/projects/04-twin/twin-03.jpg', title:'Gözüm Twin Towers' },
+		{ href:'./orcun_cv_files/projects/04-twin/twin-04.jpg', title:'Gözüm Twin Towers' },
+		{ href:'./orcun_cv_files/projects/04-twin/twin-05.jpg', title:'Gözüm Twin Towers' },
+		{ href:'./orcun_cv_files/projects/04-twin/twin-06.jpg', title:'Gözüm Twin Towers' },
+		{ href:'./orcun_cv_files/projects/04-twin/twin-07.jpg', title:'Gözüm Twin Towers' },
+		{ href:'./orcun_cv_files/projects/04-twin/twin-08.jpg', title:'Gözüm Twin Towers' },
+		] ); } );
 
-					$('#troy').photoSwipe();
-					$("#troy-a").bind("click", function(){$('#troy-init').click();} );
-					$("#troy-a").bind("tap", function(){$('#troy-init').click();} );
-			
+
+
+	$( '#fema' ).click( function( e ) { e.preventDefault(); $.swipebox( [
+		{ href:'./orcun_cv_files/projects/05-fema/fema-01.jpg', title:'Fema Headquarters' },
+		{ href:'./orcun_cv_files/projects/05-fema/fema-02.jpg', title:'Fema Headquarters' },
+		{ href:'./orcun_cv_files/projects/05-fema/fema-03.jpg', title:'Fema Headquarters' },
+		{ href:'./orcun_cv_files/projects/05-fema/fema-04.jpg', title:'Fema Headquarters' },
+		] ); } );
+
+
+	$( '#caferaga' ).click( function( e ) { e.preventDefault(); $.swipebox( [
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-01.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-02.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-03.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-04.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-05.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-06.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-07.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-08.jpg', title:'Caferağa Sports & Convention Center' },
+		{ href:'./orcun_cv_files/projects/06-caferaga/caferaga-09.jpg', title:'Caferağa Sports & Convention Center' },
+		] ); } );
+
+
+	$( '#usak' ).click( function( e ) { e.preventDefault(); $.swipebox( [
+		{ href:'./orcun_cv_files/projects/07-usak/usak-01.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-02.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-03.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-04.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-05.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-06.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-07.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-08.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-09.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-10.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-11.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-12.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-13.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-14.jpg', title:'Uşak Intercity Bus Terminal' },
+		{ href:'./orcun_cv_files/projects/07-usak/usak-15.jpg', title:'Uşak Intercity Bus Terminal' },				
+		] ); } );
+
+
+	$( '#troy' ).click( function( e ) { e.preventDefault(); $.swipebox( [
+		{ href:'./orcun_cv_files/projects/08-troy/troy-01.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-02.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-03.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-04.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-05.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-06.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-07.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-08.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-09.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-10.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-11.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-12.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-13.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-14.jpg', title:'Museum of Troy' },
+		{ href:'./orcun_cv_files/projects/08-troy/troy-15.jpg', title:'Museum of Troy' },				
+		] ); } );
+
+			});
 			</script>
 
 		<script>
