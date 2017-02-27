@@ -414,7 +414,7 @@
 					<p class="first-figure-effect"><strong>Type:</strong>Mixed Use</p>
 					<p><strong>Size:</strong>206.150 m2</p>
 					<p><strong>Location:</strong>Ankara/TURKEY</p>
-					<a href="#" onclick="$('#uzelli-init').click ();"></a>
+					<a id="uzelli-a" href="#"></a>
 					<span class="icon">
 						<span class="glyphicon glyphicon-new-window"></span>
 					</span>
@@ -741,7 +741,8 @@
 					// } );
 
 					$('#uzelli').photoSwipe();
-
+					$("#uzelli-a").on("click tap", function(){$('#uzelli-init').click();} );
+					// $("uzelli-a").bind("click", function(){$('#uzelli-init').click();} );
 			});
 
 			
